@@ -16,3 +16,13 @@ output: html_document
 *added Identify.OS and choose_dir, as utility functions.
 meaning that even for Mac OSX and Linux users if the local directory in functions is not entered you can choose it interactively through a popup widget window.
 
+# easycsv 1.0.6 30/11/2017
+
+*adde fread_zip which is the fread version of loadcsvfromZIP, also added a prefix option for fread_folder and fread_zip, accepts only strings of length 1.
+
+
+# easycsv 1.0.7 23/01/2018
+
+* fixed choose_dir for linux, had a problem with capturing returned value
+
+

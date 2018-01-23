@@ -1,5 +1,5 @@
-\name{fread_folder}
-\alias{fread_folder}
+\name{fread_zip}
+\alias{fread_zip}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
@@ -8,10 +8,11 @@ read multiple csv files into named data frames
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 Reads multiple files in table format using \link[data.table]{fread}'s speed and creates a data frame from them, with cases corresponding to lines and variables to fields in the file.
+works on .zip files only.
 }
 \usage{
-fread_folder(directory = NULL,
-                        extension = "CSV",
+fread_zip(filezip = NULL,
+                        extension = "BOTH",
                         sep = "auto",
                         nrows = -1L,
                         header = "auto",
@@ -39,8 +40,9 @@ fread_folder(directory = NULL,
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{directory}{
-  a directory to load the files from, if NULL then a manual choice is provided on windows OS.
+  \item{filezip}{
+  a '.zip' file to load the files from, if NULL then a manual choice is provided.
+  does not work with '.rar' files
   }
   \item{extension}{
   "TXT" for tables in '.txt' files, "CSV" for tables in '.csv' files, "BOTH" for both file endings.
@@ -134,17 +136,15 @@ A \link[base]{data.frame} containing a representation of the data in the file.
 \link[easycsv]{loadZIPcsvfromURL}
 \link[easycsv]{loadcsvfromZIP}
 \link[easycsv]{loadcsv_multi}
+\link[easycsv]{fread_folder}
 \link[data.table]{fread}
 }
 \examples{
+
   require(easycsv)
-  require("data.table")
-  directory = getwd()
-  write.csv(data.frame(matrix(1:9, nrow = 3)), file = file.path(directory,"/table1.csv"))
-  write.csv(data.frame(matrix(1:9, nrow = 3)), file = file.path(directory,"/table2.csv"))
-  write.csv(data.frame(matrix(1:9, nrow = 3)), file = file.path(directory,"/table3.txt"))
-  write.csv(data.frame(matrix(1:9, nrow = 3)), file = file.path(directory,"/table4.txt"))
-  fread_folder(directory, extension = "BOTH")
+  filezip <- system.file("exampleZips", "example_tables.zip", package="easycsv")
+  fread_zip(filezip)
+  fread_zip(filezip, extension = "CSV")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

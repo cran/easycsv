@@ -1,8 +1,8 @@
 Package: easycsv
 Type: Package
 Title: Load Multiple 'csv' and 'txt' Tables
-Date: 2017-08-20
-Version: 1.0.5
+Date: 2018-01-23
+Version: 1.0.7
 Authors@R: person("Dror", "Bogin", email = "dror.bogin@gmail.com",role = c("aut", "cre"))
 Description: Allows users to easily read multiple comma separated tables and create a data frame under the same name.
     Is able to read multiple comma separated tables from a local directory, a zip file or a zip file on a remote directory. 
@@ -14,8 +14,8 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2017-08-20 06:00:08 UTC; bogind
+Packaged: 2018-01-23 20:08:42 UTC; drorb
 Author: Dror Bogin [aut, cre]
 Maintainer: Dror Bogin <dror.bogin@gmail.com>
 Repository: CRAN
-Date/Publication: 2017-08-20 06:34:08 UTC
+Date/Publication: 2018-01-23 20:14:21 UTC
