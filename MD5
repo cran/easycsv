@@ -1,10 +1,10 @@
-15ca2cfb72230acd8634f3875868216d *DESCRIPTION
+92356bf1cfc1a626dfdb2ac1c5e06971 *DESCRIPTION
 9e5b38964e8362f8283a7c4f95cbe420 *NAMESPACE
-af599ed6b55323df02508f703bb6f57c *NEWS.md
+817f1091c5efde858920fbe8836f2919 *NEWS.md
 4466efc6275a06bcfffca0cdc36393c1 *R/Identify.OS.R
 c2cdf3081ddb78e008128f65d80afa45 *R/choose_dir.R
-21eebcc760f2838cc6114769d557a7f3 *R/fread_folder.R
-fad991765bce2edd5fadeac8d31b7edf *R/fread_zip.r
+e66f8c818c6d0911fb4a8ec36b74afe2 *R/fread_folder.R
+ef05c5e4a00b0955d2d5087042849164 *R/fread_zip.r
 161e166c371af03ca0ec0e4bf4530536 *R/loadZIPcsvfromURL.R
 452557f036aa2bbcbe2b824ebc68acca *R/loadcsv_multi.R
 5dc20ae6d28f47a8a1d0d9b80adbdd42 *R/loadcsvfromZIP.R
@@ -12,8 +12,8 @@ fad991765bce2edd5fadeac8d31b7edf *R/fread_zip.r
 4bf89427a97e81cec94526541e952541 *inst/exampleZips/example_tables.zip
 943a590f58636eb2acc957fc0f09891a *man/Identify.OS.Rd
 a32bf1a95b846e8003593d1ed9cbb9a4 *man/choose_dir.Rd
-81f2ca4c630871022ac5dee9ac13ffd0 *man/fread_folder.Rd
-5de937640975c045e362d224d86eb56b *man/fread_zip.Rd
+83950a09c0a42c7bf3cbffe9f5f1c39f *man/fread_folder.Rd
+a4b12ffcc1abbba95b81e682fc760594 *man/fread_zip.Rd
 7b3a3830e3981ec880d43c521e40e562 *man/loadZIPcsvfromURL.Rd
 77a9c4611b9965ae3e38f624a7442d22 *man/loadcsv_multi.Rd
 1f45e19bf1e8175c53aedd8405749af3 *man/loadcsvfromZIP.Rd
